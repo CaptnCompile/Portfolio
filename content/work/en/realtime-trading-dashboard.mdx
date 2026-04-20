@@ -1,0 +1,34 @@
+---
+title: Real-time trading dashboard for a Tokyo fintech startup
+summary: Rebuilt a slow legacy dashboard into a realtime-streaming trading tool. Cut page load from 4.2s to 0.6s.
+client: "Tokyo-based fintech startup"
+role: "Full-stack engineer"
+stack: ["Next.js", "Go", "WebSockets", "TimescaleDB", "Docker"]
+duration: "3 months"
+outcome: "Page load cut from 4.2s to 0.6s. Realtime P&L updates in sub-100ms. Doubled daily active users within a month of release."
+publishedAt: "2024-12-08"
+featured: true
+locale: en
+---
+
+## The problem
+
+The legacy dashboard was a Rails monolith with heavy Turbolinks. Traders abandoned sessions because it was too slow to react to market movements. The company was losing engagement — and therefore revenue.
+
+## Approach
+
+Rebuilt from the ground up, keeping the data layer but replacing the entire frontend and streaming pipeline.
+
+**Key decisions:**
+
+- **Go backend for streaming** — connected to upstream market data feeds, fanned out via WebSockets with channels scoped per user portfolio.
+- **TimescaleDB for historical queries** — compressed older data automatically, kept recent ticks hot. Sub-100ms queries on 18 months of tick data.
+- **Next.js frontend with streaming SSR** — initial data on the server, then WebSocket upgrade for live updates. No loading spinners anywhere.
+- **Bilingual UI from day one** — EN/JA toggle, because half the users were non-Japanese-speaking foreign traders.
+
+## Result
+
+- **Page load: 4.2s → 0.6s** (85% reduction)
+- **Realtime updates: 2.4s → under 100ms**
+- **DAU doubled in the first month** after release
+- Still running in production with no major incidents

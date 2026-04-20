@@ -1,0 +1,33 @@
+---
+title: Why I still write servers (and you probably should too)
+description: Serverless is great until it isn't. Some thoughts on when a plain old server is still the right call.
+publishedAt: "2025-09-02"
+tags: ["infrastructure", "opinion"]
+locale: en
+---
+
+The industry pendulum keeps swinging. A few years ago everything had to be serverless. Now edge runtimes are the default. Tomorrow it'll be something else.
+
+Here's my unfashionable opinion: for most products, a boring server running Node or Go on a VPS is still an excellent choice. Let me explain why.
+
+## Cold starts are a tax
+
+Every serverless abstraction leaks cold start latency somewhere. You can minimize it — provisioned concurrency, keep-warm tricks — but you can't eliminate it, and paying for warm containers is a server with extra steps.
+
+## Debugging is real
+
+When a serverless function misbehaves, your debugging tools are the provider's logs and traces. When a server misbehaves, you can SSH in, attach a profiler, strace a syscall. The latter is slower but more powerful. Senior engineers know that production debugging is where experience pays off.
+
+## Cost at scale
+
+For steady workloads, a VPS costs a fraction of equivalent serverless. I've seen teams cut 70% of their infra bill by moving off Lambda once they understood their actual load profile.
+
+## When serverless wins
+
+Serverless is still the right call for:
+
+- Event-driven workloads with unpredictable spikes
+- Teams that don't want to own any infra at all
+- Edge-critical latency where global distribution matters more than compute cost
+
+The mistake is making it the default. Start boring. Optimize when you have evidence.

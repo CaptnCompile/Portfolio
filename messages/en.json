@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "title": "Full-Stack & AI Engineer — Portfolio",
+    "description": "Senior full-stack and AI engineer based in Japan, building production systems for clients worldwide. Available for freelance projects."
+  },
+  "nav": {
+    "home": "Home",
+    "work": "Work",
+    "services": "Services",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "toggleTheme": "Toggle theme",
+    "toggleMenu": "Toggle menu",
+    "switchLanguage": "Switch language"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "home": {
+    "hero": {
+      "availability": "Available for freelance projects",
+      "name": "Ryuji Kawashima",
+      "titleLine1": "Full-stack & AI engineer",
+      "titleLine2": "building production systems.",
+      "subtitleJa": "東京から世界へ、現場で動くプロダクトを。",
+      "lead": "I help startups and global teams ship AI-powered products — from architecture and infra to frontend polish. Ten years of senior-level experience across Japan and abroad.",
+      "ctaPrimary": "Start a project",
+      "ctaSecondary": "See my work"
+    },
+    "work": {
+      "heading": "Selected Work",
+      "subheading": "A few projects I've shipped with clients.",
+      "viewAll": "View all case studies"
+    },
+    "services": {
+      "heading": "What I do",
+      "subheading": "End-to-end engineering with a focus on AI integration and production quality.",
+      "items": {
+        "fullstack": {
+          "title": "Full-Stack Development",
+          "titleJa": "フルスタック開発",
+          "description": "Next.js, TypeScript, Node, Python. From greenfield builds to legacy modernization."
+        },
+        "ai": {
+          "title": "AI Integration",
+          "titleJa": "AI統合",
+          "description": "LLM apps, RAG systems, prompt engineering, agent workflows — production-ready, not demos."
+        },
+        "consulting": {
+          "title": "Technical Consulting",
+          "titleJa": "技術コンサルティング",
+          "description": "Architecture review, code audits, and bilingual tech advisory for Japan-to-global teams."
+        }
+      }
+    },
+    "testimonials": {
+      "heading": "Voices",
+      "subheading": "What past clients and collaborators have said."
+    },
+    "cta": {
+      "heading": "Let's build something.",
+      "headingJa": "一緒に作りましょう。",
+      "body": "Have a project in mind? I'd love to hear about it. Send a brief or book a short intro call.",
+      "ctaPrimary": "Send a brief",
+      "ctaSecondary": "Book a call"
+    }
+  },
+  "work": {
+    "heading": "Work",
+    "subheading": "Case studies from projects I've shipped.",
+    "empty": "Case studies coming soon.",
+    "labels": {
+      "client": "Client",
+      "role": "Role",
+      "stack": "Stack",
+      "duration": "Duration",
+      "outcome": "Outcome"
+    }
+  },
+  "blog": {
+    "heading": "Writing",
+    "subheading": "Notes on full-stack development, AI, and engineering craft.",
+    "readMore": "Read more",
+    "readingTime": "{{minutes}} min read",
+    "empty": "Posts coming soon.",
+    "publishedOn": "Published on {{date}}",
+    "tags": "Tags"
+  },
+  "about": {
+    "heading": "About",
+    "subheading": "Senior full-stack and AI engineer based in Japan.",
+    "bioHeading": "Bio",
+    "careerHeading": "Career",
+    "philosophyHeading": "Philosophy"
+  },
+  "services": {
+    "heading": "Services",
+    "subheading": "How I work with clients.",
+    "engagement": "Engagement Models",
+    "rates": "Rates"
+  },
+  "contact": {
+    "heading": "Get in touch",
+    "subheading": "Tell me about your project, or book a short intro call.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "you@company.com",
+      "projectType": "Project type",
+      "projectTypePlaceholder": "Select one",
+      "projectTypes": {
+        "fullstack": "Full-stack build",
+        "ai": "AI integration",
+        "consulting": "Consulting / audit",
+        "other": "Other"
+      },
+      "budget": "Budget range (USD)",
+      "budgetPlaceholder": "Select one",
+      "budgets": {
+        "under10k": "Under $10k",
+        "10k_30k": "$10k – $30k",
+        "30k_100k": "$30k – $100k",
+        "over100k": "$100k+"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project, timeline, and team.",
+      "submit": "Send message",
+      "submitting": "Sending...",
+      "success": "Thanks — I'll get back to you within two business days.",
+      "error": "Something went wrong. Please try again or email me directly."
+    },
+    "booking": {
+      "heading": "Or book a short intro call",
+      "body": "30 minutes, free, no pressure. Pick a slot that works for you."
+    }
+  },
+  "footer": {
+    "tagline": "Full-stack & AI engineer based in Japan.",
+    "madeWith": "Made with care in Tokyo.",
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "heading": "Page not found",
+    "subheading": "The page you're looking for doesn't exist or has been moved.",
+    "cta": "Back to home"
+  }
+}

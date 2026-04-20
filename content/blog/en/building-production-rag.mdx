@@ -1,0 +1,40 @@
+---
+title: Building a production RAG system that doesn't fall over
+description: Lessons from shipping a document intelligence platform that actually handles real user queries in production.
+publishedAt: "2025-10-14"
+tags: ["ai", "rag", "architecture"]
+locale: en
+---
+
+Most RAG tutorials stop at "hello world" — load a PDF, chunk it, query it. Real production systems fail at edge cases the tutorials never show you: queries that span multiple documents, chunking strategies that destroy meaning, retrieval that returns plausible-but-wrong context.
+
+Here's what actually matters when you're building one for paying customers.
+
+## Retrieval is harder than generation
+
+The weakest link in most RAG systems isn't the LLM — it's retrieval. If you fetch bad chunks, no prompt engineering in the world will save you.
+
+```ts
+// Bad: naive chunking by fixed size
+const chunks = text.match(/.{1,1000}/g);
+
+// Better: structure-aware chunking that preserves
+// headings, lists, and code blocks as atomic units.
+const chunks = splitBySemanticBoundaries(text, {
+  maxTokens: 800,
+  overlap: 120,
+  respectBlocks: ["heading", "list", "code"],
+});
+```
+
+Hybrid search (BM25 + vector) almost always beats pure vector search in production. Keyword signals matter more than people think.
+
+## Evaluation is not optional
+
+You cannot tune a RAG system by vibes. Build an evaluation set early — 50 queries with expected answers is enough to start. Measure retrieval recall separately from end-to-end answer quality. If retrieval drops, the whole system drops.
+
+## Keep humans in the loop
+
+For high-stakes answers, route low-confidence responses to a human reviewer. Confidence can come from retrieval scores, LLM self-rating, or heuristics about the question.
+
+The teams that ship RAG successfully treat it as a systems problem, not a prompt engineering problem.

@@ -1,0 +1,34 @@
+---
+title: Document intelligence platform for a Series B SaaS
+summary: Built a production RAG system that reduced customer support time by 40%, replacing a team of analysts with an AI-powered knowledge agent.
+client: "Series B SaaS (NDA)"
+role: "Lead engineer"
+stack: ["Next.js", "TypeScript", "OpenAI", "Pinecone", "PostgreSQL", "Vercel"]
+duration: "4 months"
+outcome: "40% reduction in average support ticket resolution time. Shipped to all customers; handles 10k+ queries per day."
+publishedAt: "2025-11-01"
+featured: true
+locale: en
+---
+
+## The problem
+
+The client's customer success team was drowning. Every support ticket required analysts to manually search through a knowledge base of 12,000+ documents — compliance guides, product specs, previous tickets. Response time was averaging 6 hours; target was 1.
+
+## Approach
+
+I led the design and implementation of a RAG-powered knowledge agent embedded directly in the support tool.
+
+**Key decisions:**
+
+- **Hybrid search (BM25 + vector)** instead of pure vector. Tested on their real ticket corpus — hybrid beat pure vector by 18 points on recall@5.
+- **Structure-aware chunking** that preserved headings, tables, and code blocks. Cut hallucinations in half vs. naive fixed-size chunking.
+- **Human-in-the-loop for low-confidence responses** — if retrieval confidence dropped below a threshold, the agent routed the ticket to a human reviewer instead of guessing.
+- **Eval harness from day one.** 200 seed questions, run on every prompt change, with automated regression alerts.
+
+## Result
+
+- **40% reduction in average resolution time**
+- Handles 10,000+ support queries per day
+- 92% customer satisfaction score on AI-handled tickets (vs. 87% baseline for human responses)
+- Zero critical hallucination incidents in first 6 months

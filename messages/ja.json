@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "title": "フルスタック・AIエンジニア — ポートフォリオ",
+    "description": "日本を拠点に、グローバルクライアント向けのプロダクションシステムを構築するシニアフルスタック・AIエンジニア。フリーランス案件受付中。"
+  },
+  "nav": {
+    "home": "ホーム",
+    "work": "作品",
+    "services": "サービス",
+    "blog": "ブログ",
+    "about": "プロフィール",
+    "contact": "お問い合わせ",
+    "toggleTheme": "テーマ切替",
+    "toggleMenu": "メニュー切替",
+    "switchLanguage": "言語切替"
+  },
+  "theme": {
+    "light": "ライト",
+    "dark": "ダーク",
+    "system": "システム"
+  },
+  "home": {
+    "hero": {
+      "availability": "フリーランス案件受付中",
+      "name": "川島 龍治",
+      "titleLine1": "フルスタック・AIエンジニア。",
+      "titleLine2": "現場で動くプロダクトを。",
+      "subtitleJa": "Building AI-powered products from Tokyo to the world.",
+      "lead": "スタートアップからグローバルチームまで、AI統合を中心にフルスタックで支援しています。アーキテクチャからインフラ、UI仕上げまで。国内外10年以上の実務経験。",
+      "ctaPrimary": "プロジェクトを始める",
+      "ctaSecondary": "作品を見る"
+    },
+    "work": {
+      "heading": "Selected Work / 作品集",
+      "subheading": "クライアントと共に作り上げたプロジェクトから。",
+      "viewAll": "すべての事例を見る"
+    },
+    "services": {
+      "heading": "できること",
+      "subheading": "AI統合とプロダクション品質を軸にした、エンドツーエンドのエンジニアリング。",
+      "items": {
+        "fullstack": {
+          "title": "Full-Stack Development",
+          "titleJa": "フルスタック開発",
+          "description": "Next.js・TypeScript・Node・Python。新規開発からレガシー刷新まで対応します。"
+        },
+        "ai": {
+          "title": "AI Integration",
+          "titleJa": "AI統合",
+          "description": "LLMアプリ、RAGシステム、プロンプト設計、エージェントワークフロー。デモではなく本番運用を前提に。"
+        },
+        "consulting": {
+          "title": "Technical Consulting",
+          "titleJa": "技術コンサルティング",
+          "description": "アーキテクチャレビュー、コード監査、日本発グローバルチーム向けのバイリンガル技術支援。"
+        }
+      }
+    },
+    "testimonials": {
+      "heading": "声 / Voices",
+      "subheading": "これまで一緒に仕事をしたクライアントや仲間から。"
+    },
+    "cta": {
+      "heading": "Let's build something.",
+      "headingJa": "一緒に作りましょう。",
+      "body": "ご相談ベースで構いません。プロジェクトの概要をお送りいただくか、短い面談をご予約ください。",
+      "ctaPrimary": "概要を送る",
+      "ctaSecondary": "面談を予約"
+    }
+  },
+  "work": {
+    "heading": "作品",
+    "subheading": "これまでに手がけたプロジェクトの事例集です。",
+    "empty": "準備中です。",
+    "labels": {
+      "client": "クライアント",
+      "role": "役割",
+      "stack": "技術スタック",
+      "duration": "期間",
+      "outcome": "成果"
+    }
+  },
+  "blog": {
+    "heading": "ブログ",
+    "subheading": "フルスタック開発、AI、エンジニアリングについての記事。",
+    "readMore": "続きを読む",
+    "readingTime": "約{{minutes}}分",
+    "empty": "準備中です。",
+    "publishedOn": "{{date}} 公開",
+    "tags": "タグ"
+  },
+  "about": {
+    "heading": "プロフィール",
+    "subheading": "日本を拠点とするシニアフルスタック・AIエンジニア。",
+    "bioHeading": "経歴",
+    "careerHeading": "キャリア",
+    "philosophyHeading": "大切にしていること"
+  },
+  "services": {
+    "heading": "サービス",
+    "subheading": "お客様との協業の進め方。",
+    "engagement": "契約形態",
+    "rates": "料金"
+  },
+  "contact": {
+    "heading": "お問い合わせ",
+    "subheading": "プロジェクトの概要をお送りいただくか、短い面談をご予約ください。",
+    "form": {
+      "name": "お名前",
+      "namePlaceholder": "氏名",
+      "email": "メールアドレス",
+      "emailPlaceholder": "you@company.com",
+      "projectType": "プロジェクト種別",
+      "projectTypePlaceholder": "選択してください",
+      "projectTypes": {
+        "fullstack": "フルスタック開発",
+        "ai": "AI統合",
+        "consulting": "コンサルティング・監査",
+        "other": "その他"
+      },
+      "budget": "ご予算（USD）",
+      "budgetPlaceholder": "選択してください",
+      "budgets": {
+        "under10k": "$10k未満",
+        "10k_30k": "$10k – $30k",
+        "30k_100k": "$30k – $100k",
+        "over100k": "$100k以上"
+      },
+      "message": "メッセージ",
+      "messagePlaceholder": "プロジェクトの内容・スケジュール・チーム構成などをお聞かせください。",
+      "submit": "送信する",
+      "submitting": "送信中...",
+      "success": "ありがとうございます。2営業日以内にご連絡いたします。",
+      "error": "送信に失敗しました。時間をおいて再度お試しいただくか、直接メールをお送りください。"
+    },
+    "booking": {
+      "heading": "または短い面談を予約",
+      "body": "30分・無料・気軽に。ご都合の良い時間をお選びください。"
+    }
+  },
+  "footer": {
+    "tagline": "日本を拠点とするフルスタック・AIエンジニア。",
+    "madeWith": "東京より、丁寧に。",
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "heading": "ページが見つかりません",
+    "subheading": "お探しのページは存在しないか、移動された可能性があります。",
+    "cta": "ホームに戻る"
+  }
+}
