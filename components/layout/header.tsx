@@ -50,7 +50,7 @@ export function Header() {
             川
           </span>
           <span className="transition-colors group-hover:text-accent">
-            Portfolio
+            Ryuji Kawashima
           </span>
         </Link>
 

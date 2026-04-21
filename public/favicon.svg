@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect x="4" y="4" width="56" height="56" rx="6" fill="#b8382c" transform="rotate(-2 32 32)"/>
+  <g transform="rotate(-2 32 32)" fill="#f7ebe2" font-family="'Noto Sans JP','Zen Kaku Gothic New',serif" font-weight="700">
+    <text x="32" y="44" text-anchor="middle" font-size="40">川</text>
+  </g>
+</svg>

@@ -44,7 +44,7 @@ export function MobileNav() {
             >
               川
             </span>
-            Portfolio
+            Ryuji Kawashima
           </SheetTitle>
           <SheetDescription className="sr-only">
             {t("nav.toggleMenu")}

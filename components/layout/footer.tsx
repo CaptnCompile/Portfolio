@@ -1,7 +1,7 @@
 import { Mail } from "lucide-react";
 import { useTranslations } from "@/lib/i18n-compat";
 import { Link } from "@/lib/navigation";
-import { GithubIcon, LinkedinIcon } from "@/components/icons/social";
+import { GithubIcon } from "@/components/icons/social";
 
 export function Footer() {
   const t = useTranslations();
@@ -19,7 +19,7 @@ export function Footer() {
             >
               川
             </span>
-            Portfolio
+            Ryuji Kawashima
           </div>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">
             {t("footer.tagline")}
@@ -52,7 +52,7 @@ export function Footer() {
             Connect
           </h3>
           <a
-            href="https://github.com"
+            href="https://github.com/captncompile"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
@@ -61,16 +61,7 @@ export function Footer() {
             GitHub
           </a>
           <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-          >
-            <LinkedinIcon className="h-4 w-4" />
-            LinkedIn
-          </a>
-          <a
-            href="mailto:hello@example.com"
+            href="mailto:ryujikawashima36@gmail.com"
             className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
             <Mail className="h-4 w-4" />
@@ -82,7 +73,7 @@ export function Footer() {
       <div className="border-t border-border/50">
         <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-2 px-6 py-6 text-xs text-muted-foreground md:flex-row md:px-10">
           <p>
-            © {year} Portfolio. {t("footer.rights")}
+            © {year} Ryuji Kawashima. {t("footer.rights")}
           </p>
           <p className="tabular-nums">{t("footer.madeWith")}</p>
         </div>
